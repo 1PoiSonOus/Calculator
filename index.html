@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Calculator</title>
+   <link rel="stylesheet" href="/CSS/stylesheet.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.cdnfonts.com/css/ds-digital?styles=17999" rel="stylesheet">
+</head>
+
+<body style="background-image: url('img/BG7.jpg'); background-size: cover; background-repeat: no-repeat; ">
+   <div id="calc">
+      <div id="content">
+         <div>
+         
+         <form>
+            <div>
+            <div id="calculator-title">
+               <img src="img/My Logo.png" id="calculator-image" alt="Calculator Image">
+               <h1 id="calculator-word">Calculator</h1>
+            </div>
+            <div id="output">
+               <input type="text" id='res' class="Digital-bold">
+            </div>
+            </div>
+            <div class="btn">
+               <input type="button" value='AC' onclick="Clear()" id="clear">
+               <input type="button" value='←' onclick="Back()" id="backspace">
+               <input type="button" value='%' onclick="Solve('%')" id="operations">
+               <input type="button" value='/' onclick="Solve('/')" id="operations">
+               <br>
+
+               <input type="button" value='7' onclick="Solve('7')" id="number">
+               <input type="button" value='8' onclick="Solve('8')" id="number">
+               <input type="button" value='9' onclick="Solve('9')" id="number">
+               <input type="button" value='* ' onclick="Solve('*')" id="operations">
+               <br>
+
+               <input type="button" value='4' onclick="Solve('4')" id="number">
+               <input type="button" value='5' onclick="Solve('5')" id="number">
+               <input type="button" value='6' onclick="Solve('6')" id="number">
+               <input type="button" value='-' onclick="Solve('-')" id="operations">
+               <br>
+
+               <input type="button" value='1' onclick="Solve('1')" id="number">
+               <input type="button" value='2' onclick="Solve('2')" id="number">
+               <input type="button" value='3' onclick="Solve('3')" id="number">
+               <input type="button" value='+' onclick="Solve('+')" id="operations">
+               <br>
+               
+               <input type="button" value='0' onclick="Solve('0')" id="zero">
+               <input type="button" value='.' onclick="Solve('.')" id="operations">
+               <input type="button" value='=' onclick="Result()" id="operations">
+            </div>
+         </form>
+      </div>
+   </div>
+   <script src='js/main.js'></script>
+</body>
+
+</html>
